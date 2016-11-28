@@ -21,17 +21,19 @@ UDPSocket::UDPSocket(int port){
 	fsize = sizeof(from);
 
 	//bind the socket on the specified address
-//	printf("UDP server binding...\n");
-	if(bind(socket_fd, (struct sockaddr *)&s_in, sizeof(s_in))<0){
+
+	if(::bind(socket_fd,(struct sockaddr *)&s_in, sizeof(s_in))<0)
+	{
 		perror ("Error naming channel");
 	}
+	else printf("UDP server binding...\n");
 }
 
 int UDPSocket::recv(char* buffer, int length){
 
 	//ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags,
 	//					struct sockaddr *src_addr, socklen_t *addrlen);
-	return recvfrom(socket_fd,buffer,length,0,(struct sockaddr *)&from,&fsize);
+	return (int) recvfrom(socket_fd, buffer, length, 0, (struct sockaddr *)&from, &fsize);
 }
 
 int UDPSocket::sendTo(string msg, string ip, int port){
@@ -40,7 +42,7 @@ int UDPSocket::sendTo(string msg, string ip, int port){
 	toAddr.sin_family = AF_INET;
 	toAddr.sin_addr.s_addr = inet_addr(ip.data());
 	toAddr.sin_port = htons(port);
-	return sendto(socket_fd,msg.data(),msg.length(),0,(struct sockaddr *)&toAddr,sizeof(toAddr));
+	return (int) sendto(socket_fd, msg.data(), msg.length(), 0, (struct sockaddr *)&toAddr, sizeof(toAddr));
 }
 
 int UDPSocket::reply(string msg){

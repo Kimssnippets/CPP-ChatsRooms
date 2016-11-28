@@ -2,7 +2,7 @@ namespace npl {
 #ifndef TCPMESSENGERPROTOCOL_H_
 #define TCPMESSENGERPROTOCOL_H_
 
-#define MSNGR_PORT 9999
+#define MSNGR_PORT 8899
 
 #define CLOSE_SESSION_WITH_PEER    1
 #define OPEN_SESSION_WITH_PEER        2

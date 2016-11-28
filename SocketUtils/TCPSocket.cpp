@@ -34,7 +34,7 @@ TCPSocket::TCPSocket(int port){
 
 	//bind the socket on the specified address
 	printf("TCP server binding...\n");
-	if (bind(socket_fd, (struct sockaddr *)&serverAddr, sizeof(serverAddr)) < 0)
+	if (::bind(socket_fd, (struct sockaddr *)&serverAddr, sizeof(serverAddr))<0)
 	{
 		perror ("Error naming channel");
 	}
@@ -110,7 +110,7 @@ int TCPSocket::readCommand()
 {
 	int messagelength = 0, recived = 0;
 	recived = recv((char*)&messagelength,4);
-	if(!recived==4)
+	if(recived!=4)
 		return 0;
 	return ntohl((uint32_t)messagelength);
 }
@@ -121,7 +121,7 @@ string TCPSocket::readMsg()
 	bzero(rcvmsg, 300);
 	int recived = 0,messagelength = 0, len = 0;
 	recived = recv((char*)&messagelength,4);
-	if(!recived>0)
+	if(recived<=0)
 		return string("0");
 	len = ntohl((uint32_t)messagelength);
 	recv(rcvmsg,len);

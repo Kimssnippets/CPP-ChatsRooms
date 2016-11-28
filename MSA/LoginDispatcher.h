@@ -10,8 +10,8 @@
 using namespace std;
 namespace  npl {
 	class LoginDispatcher : public MThread {
-
-		string userList = "/home/kobi/Desktop/NetworkProgramingLab/MSA/userList.txt";
+		
+		string userList = "/Users/admin/ClionProjects/-CPlusPlus-NetworkProgramingLab/MSA/userList.txt";
 		map<string, TCPSocket *> peers;//
 		bool running;
 		MultipleTCPSocketsListener *listener;

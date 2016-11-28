@@ -26,8 +26,6 @@ void instructions(){
 
 
 }
-
-
 int main() {
 	cout<<" Welcome to the client chat "<<endl;
 

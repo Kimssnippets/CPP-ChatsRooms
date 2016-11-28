@@ -9,9 +9,9 @@
 #include "../SocketUtils/TCPMessengerProtocol.h"
 namespace npl{
 class User;
-
+	
 class TcpServerMessenger: public MThread {
-string userList = "/home/kobi/Desktop/NetworkProgramingLab/MSA/userList.txt";//file of the userlist (path)
+string userList = "/Users/admin/ClionProjects/-CPlusPlus-NetworkProgramingLab/MSA/userList.txt";//file of the userlist (path)
 MultipleTCPSocketsListener *multiUserListener;//socket listener for
 pthread_mutex_t users_mutx;
 pthread_mutex_t chatroom_mutx;
