@@ -15,7 +15,7 @@ class TcpServerMessenger: public MThread {
 /*Please note you have to change this path respectively to your project direction! otherwise users cannot register OR login*/
 string userList = "/Users/admin/ClionProjects/-CPlusPlus-NetworkProgramingLab/MSA/userList.txt";//file of the userlist (path)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-MultipleTCPSocketsListener *multiUserListener;//socket listener for
+MultipleTCPSocketsListener *multiUserListener;//socket listener for server login
 pthread_mutex_t users_mutx;
 pthread_mutex_t chatroom_mutx;
 map<string, User*> usersMap;

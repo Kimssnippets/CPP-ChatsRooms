@@ -92,14 +92,15 @@ bool TcpCLientMessenger::connectToServer(string ip, int port){
 	serverSocket = new TCPSocket(ip,port);
 	return true;
 }
+/*Register to the server->print notes if necessary */
 void TcpCLientMessenger::sign(string username,string password,int oper){
 	int response;
 	if(serverSocket)
 	{
-		serverSocket->writeCommand(oper);
+		serverSocket->writeCommand(oper);//note the server that the user want to connect->by protocol
 		serverSocket->writeMsg(username);
 		serverSocket->writeMsg(password);
-		response = serverSocket->readCommand();
+		response = serverSocket->readCommand();//getting answer from the Server->and now check if the sing successful
 
 		if (response == SIGNUP_REQUEST_APPROVED)
 		{
@@ -115,6 +116,7 @@ void TcpCLientMessenger::sign(string username,string password,int oper){
 		cout<<"the server is not connected:("<<endl;
 	}
 }
+/*Login to server->print error note if necessary  */
 void TcpCLientMessenger::log(string username,string password,int oper){
 	int response;
 	if(serverSocket)
@@ -142,17 +144,19 @@ void TcpCLientMessenger::log(string username,string password,int oper){
 		cout<<"the server is not connected:("<<endl;
 	}
 }
+/*Open session between two users by userName*/
 bool TcpCLientMessenger::openSession(string partnername){
-	if (!serverSocket || !login || isInChat())
+	if (!serverSocket || !login || isInChat())//chech connectivty
 	{
 		cout<<"You are not connected or not logged in"<<endl;
 		return false;
 	}
-	serverSocket->writeCommand(SESSION_CREATE);
-	serverSocket->writeMsg(partnername);
+	serverSocket->writeCommand(SESSION_CREATE);//Note for server to open A two users session
+	serverSocket->writeMsg(partnername);//send the desirable user for server and return true->If the request failed->the server send aNote about that
 
 	return true;
 }
+/*Print to currently status of the user  and check if is connect to server & login & on session */
 void TcpCLientMessenger::printCurrentInfo(){
 	if (serverSocket)
 		cout<< "Connected to server "<<endl;
@@ -171,15 +175,16 @@ void TcpCLientMessenger::printCurrentInfo(){
 	else
 		cout<< "NOT In chat room: "<<endl;
 }
+/*This bolean method try to send a message->if succeed return true ->if not return false */
 bool TcpCLientMessenger::sendMsg(string msg){
-	if(sessionOn)
+	if(sessionOn)//if on private chat->send message only to partner (udpChatSideB (Object type:usersSockets->Create on the TcpClientMessanger.h))
 	{
 		clientLinker->send( string(">[")+_username+string("] ") + msg,udpChatSideB._IP,udpChatSideB._port);
 		return true;
 	}
-	else if (roomOn)
+	else if (roomOn)//the user is not on private chat->the user is on the chat,The message based on UDP protocol
 	{
-		std::vector<usersSockets*>::iterator iter = chatUsers.begin();
+		std::vector<usersSockets*>::iterator iter = chatUsers.begin();//init the to iterator for the Message loop
 		std::vector<usersSockets*>::iterator enditer = chatUsers.end();
 
 		while (iter != enditer)
@@ -187,10 +192,11 @@ bool TcpCLientMessenger::sendMsg(string msg){
 			clientLinker->send(string(">[")+_username+string("] ") + msg,(*iter)->_IP,(*iter)->_port);
 			iter++;
 		}
-		return true;
+		return true;//if all the message send currently->return true
 	}
 	return false;
 }
+/*This bolean method try to send a open new room->if succeed return true ->if not return false !!! the method did not return a reason for unsucceed->the server return this reason*/
 bool TcpCLientMessenger::createChatRoom(string name){
 	if(!serverSocket || !login || isInChat())
 		return false;
@@ -199,6 +205,7 @@ bool TcpCLientMessenger::createChatRoom(string name){
 
 	return true;
 }
+/*login the chat room for */
 bool TcpCLientMessenger::loginToChatRoom(string msg){
 	if(isInChat() || !serverSocket || !login)
 		return false;
@@ -206,6 +213,7 @@ bool TcpCLientMessenger::loginToChatRoom(string msg){
 	serverSocket->writeMsg(msg);
 	return true;
 }
+/*after send a request for list of user that are currntly connect to the server->this method print ths users names*/
 void TcpCLientMessenger::printConnectedUsers(){
 	int i;
 	int numOfUsers;
@@ -265,7 +273,6 @@ void TcpCLientMessenger::listConnectedUsersInRoom(string roomName){
 	serverSocket->writeCommand(LIST_CONNECTED_USERS_IN_ROOM);
 	serverSocket->writeMsg(roomName);
 }
-
 bool TcpCLientMessenger::deleteChatRoom(string name){
 	if (!serverSocket || !login)
 	{

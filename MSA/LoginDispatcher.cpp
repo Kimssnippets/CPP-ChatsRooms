@@ -2,19 +2,17 @@
 using namespace npl;
 
 
-
-
-
-
-LoginDispatcher::LoginDispatcher(TcpServerMessenger* serverManager) {
-	listener = NULL;
+LoginDispatcher::LoginDispatcher(TcpServerMessenger* serverManager)
+{
+	listener = NULL;//MultipleTCPSocketsListener object->need to initialize after initialize the server local variable
 	_serverManager = serverManager;
-	pthread_mutex_init(&peers_mutx,NULL);
+	pthread_mutex_init(&peers_mutx,NULL);//initialize mutex variable->NULL beacuse we dont need special properties for are mutex,
 	running = true;
-	start();
+	start();//Start the thread->GO to the run() function bellow
 	cout<<"LoginAndSignUP is on"<<endl;
 
 }
+
 void LoginDispatcher::run(){
 	TCPSocket* socktotalk = NULL;
 	int commandreceved = 0;

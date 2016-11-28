@@ -44,6 +44,7 @@ private:
 	void addRoomUser(string roomate, string IP, int port);
 
 public:
+    /*try to connect to the given ip server.if unsucceed- return false otherwise return true */
 	bool connectToServer(string ip,int port);
 	void sign(string username,string password,int oper);
 	void log(string username,string password,int oper);
