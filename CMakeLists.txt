@@ -3,17 +3,17 @@ project(NetworkProgramingLab)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pthread")
 
-set(MSA
+set(Server
 
-        MSA/cRoom.cpp
-        MSA/cRoom.h
-        MSA/LoginDispatcher.cpp
-        MSA/LoginDispatcher.h
-        MSA/Main.cpp
-        MSA/TcpServerMessenger.cpp
-        MSA/TcpServerMessenger.h
-        MSA/User.cpp
-        MSA/User.h
+        Server/cRoom.cpp
+        Server/cRoom.h
+        Server/LoginDispatcher.cpp
+        Server/LoginDispatcher.h
+        Server/Main.cpp
+        Server/TcpServerMessenger.cpp
+        Server/TcpServerMessenger.h
+        Server/User.cpp
+        Server/User.h
     SocketUtils/MThread.cpp
     SocketUtils/MThread.h
     SocketUtils/MultipleTCPSocketListener.cpp
@@ -26,14 +26,14 @@ set(MSA
 
    )
 
-add_executable(MSA ${MSA})
-set(MCA
+add_executable(Server ${Server})
+set(Client
 
-        MCA/UdpClientMessenger.cpp
-        MCA/UdpClientMessenger.h
-        MCA/TcpCLientMessenger.cpp
-        MCA/TcpCLientMessenger.h
-        MCA/main.cpp
+        Client/UdpClientMessenger.cpp
+        Client/UdpClientMessenger.h
+        Client/TcpCLientMessenger.cpp
+        Client/TcpCLientMessenger.h
+        Client/main.cpp
         SocketUtils/MThread.cpp
         SocketUtils/MThread.h
         SocketUtils/MultipleTCPSocketListener.cpp
@@ -45,7 +45,7 @@ set(MCA
         SocketUtils/UDPSocket.h
         )
 
-add_executable(MCA ${MCA})
+add_executable(Client ${Client})
 
 set(TEST
         Tests/MessengerTest.cpp
@@ -55,18 +55,18 @@ set(TEST
         Tests/UDPSocketTest.cpp
         Tests/UDPSocketTest.h
         Tests/main.cpp
-        MSA/cRoom.cpp
-        MSA/cRoom.h
-        MSA/LoginDispatcher.cpp
-        MSA/LoginDispatcher.h
-        MSA/TcpServerMessenger.cpp
-        MSA/TcpServerMessenger.h
-        MSA/User.cpp
-        MSA/User.h
-        MCA/UdpClientMessenger.cpp
-        MCA/UdpClientMessenger.h
-        MCA/TcpCLientMessenger.cpp
-        MCA/TcpCLientMessenger.h
+        Server/cRoom.cpp
+        Server/cRoom.h
+        Server/LoginDispatcher.cpp
+        Server/LoginDispatcher.h
+        Server/TcpServerMessenger.cpp
+        Server/TcpServerMessenger.h
+        Server/User.cpp
+        Server/User.h
+        Client/UdpClientMessenger.cpp
+        Client/UdpClientMessenger.h
+        Client/TcpCLientMessenger.cpp
+        Client/TcpCLientMessenger.h
         SocketUtils/MThread.cpp
         SocketUtils/MThread.h
         SocketUtils/MultipleTCPSocketListener.cpp

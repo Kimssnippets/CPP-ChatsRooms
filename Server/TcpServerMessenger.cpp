@@ -252,7 +252,7 @@ void TcpServerMessenger::exitServer(User* clientName){
 	clientName->closeSession(true);
 	clientName->disconnectFromChatRom(false);
 
-	cout<<"the MCA  : "<< clientName->getusername() << " was  disconnect" <<endl;
+	cout<<"the Client  : "<< clientName->getusername() << " was  disconnect" <<endl;
 
 	pthread_mutex_lock(&users_mutx);
     deleteChatRoom(clientName);///////////

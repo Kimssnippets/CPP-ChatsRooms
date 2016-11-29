@@ -2,12 +2,14 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
     <generated>
+      <config projectName="NetworkProgramingLab" targetName="Client" />
       <config projectName="The_project2___Copy" targetName="MSA" />
       <config projectName="The_project2___Copy" targetName="MCA" />
       <config projectName="NetworkProgramingLab" targetName="TEST" />
       <config projectName="NetworkProgramingLab" targetName="MSA" />
       <config projectName="NetworkProgramingLab" targetName="MCA" />
       <config projectName="The_project2___Copy" targetName="TEST" />
+      <config projectName="NetworkProgramingLab" targetName="Server" />
       <config projectName="The_project2___Copy" targetName="The_project2___Copy" />
     </generated>
   </component>
@@ -18,12 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d517650-8564-4e14-9ed0-02618f938ce3" name="Default" comment="update notes">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MCA/TcpCLientMessenger.cpp" afterPath="$PROJECT_DIR$/Client/TcpCLientMessenger.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MCA/TcpCLientMessenger.h" afterPath="$PROJECT_DIR$/Client/TcpCLientMessenger.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MCA/UdpClientMessenger.cpp" afterPath="$PROJECT_DIR$/Client/UdpClientMessenger.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MCA/UdpClientMessenger.h" afterPath="$PROJECT_DIR$/Client/UdpClientMessenger.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MCA/main.cpp" afterPath="$PROJECT_DIR$/Client/main.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/LoginDispatcher.cpp" afterPath="$PROJECT_DIR$/Server/LoginDispatcher.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/LoginDispatcher.h" afterPath="$PROJECT_DIR$/Server/LoginDispatcher.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/Main.cpp" afterPath="$PROJECT_DIR$/Server/Main.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/TcpServerMessenger.cpp" afterPath="$PROJECT_DIR$/Server/TcpServerMessenger.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/TcpServerMessenger.h" afterPath="$PROJECT_DIR$/Server/TcpServerMessenger.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/User.cpp" afterPath="$PROJECT_DIR$/Server/User.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/User.h" afterPath="$PROJECT_DIR$/Server/User.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/cRoom.cpp" afterPath="$PROJECT_DIR$/Server/cRoom.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/cRoom.h" afterPath="$PROJECT_DIR$/Server/cRoom.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/userList.txt" afterPath="$PROJECT_DIR$/Server/userList.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCA/TcpCLientMessenger.cpp" afterPath="$PROJECT_DIR$/MCA/TcpCLientMessenger.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCA/TcpCLientMessenger.h" afterPath="$PROJECT_DIR$/MCA/TcpCLientMessenger.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MSA/LoginDispatcher.cpp" afterPath="$PROJECT_DIR$/MSA/LoginDispatcher.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MSA/LoginDispatcher.h" afterPath="$PROJECT_DIR$/MSA/LoginDispatcher.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MSA/TcpServerMessenger.h" afterPath="$PROJECT_DIR$/MSA/TcpServerMessenger.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
     </list>
     <ignored path="The project2 - Copy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,33 +56,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TcpServerMessenger.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MSA/TcpServerMessenger.h">
+      <file leaf-file-name="TcpServerMessenger.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Server/TcpServerMessenger.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="16" selection-end-column="128" />
+            <state relative-caret-position="465">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="LoginDispatcher.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MSA/LoginDispatcher.h">
+        <entry file="file://$PROJECT_DIR$/Server/LoginDispatcher.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
+            <state relative-caret-position="150">
               <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
               <folding>
-                <element signature="e#35#49#0" expanded="true" />
+                <element signature="e#35#49#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TcpCLientMessenger.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MCA/TcpCLientMessenger.cpp">
+      <file leaf-file-name="TcpCLientMessenger.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/TcpCLientMessenger.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+            <state relative-caret-position="120">
+              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding>
                 <element signature="e#102#221#0" expanded="false" />
                 <element signature="e#2297#2449#0" expanded="false" />
@@ -103,8 +116,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/Main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="LoginDispatcher.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MSA/LoginDispatcher.cpp">
+        <entry file="file://$PROJECT_DIR$/Server/LoginDispatcher.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
               <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
@@ -121,20 +154,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cRoom.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MSA/cRoom.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MultipleTCPSocketListener.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SocketUtils/MultipleTCPSocketListener.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="135">
               <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
               <folding />
             </state>
@@ -162,7 +185,7 @@
         </entry>
       </file>
       <file leaf-file-name="TcpServerMessenger.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MSA/TcpServerMessenger.cpp">
+        <entry file="file://$PROJECT_DIR$/Server/TcpServerMessenger.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="28" />
@@ -178,16 +201,16 @@
                 <element signature="e#5391#5786#0" expanded="false" />
                 <element signature="e#5787#6079#0" expanded="false" />
                 <element signature="e#6080#6173#0" expanded="false" />
-                <element signature="e#6174#6544#0" expanded="false" />
-                <element signature="e#6545#7183#0" expanded="false" />
-                <element signature="e#7184#8021#0" expanded="false" />
-                <element signature="e#8022#8851#0" expanded="false" />
-                <element signature="e#8852#9727#0" expanded="false" />
-                <element signature="e#9728#10048#0" expanded="false" />
-                <element signature="e#10049#10675#0" expanded="false" />
-                <element signature="e#10676#10769#0" expanded="false" />
-                <element signature="e#10770#11284#0" expanded="false" />
-                <element signature="e#11285#11366#0" expanded="false" />
+                <element signature="e#6174#6547#0" expanded="false" />
+                <element signature="e#6548#7186#0" expanded="false" />
+                <element signature="e#7187#8024#0" expanded="false" />
+                <element signature="e#8025#8854#0" expanded="false" />
+                <element signature="e#8855#9730#0" expanded="false" />
+                <element signature="e#9731#10051#0" expanded="false" />
+                <element signature="e#10052#10678#0" expanded="false" />
+                <element signature="e#10679#10772#0" expanded="false" />
+                <element signature="e#10773#11287#0" expanded="false" />
+                <element signature="e#11288#11369#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -208,7 +231,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Server/ServerManager.h" />
         <option value="$PROJECT_DIR$/Server/User.cpp" />
         <option value="$PROJECT_DIR$/Server/User.h" />
         <option value="$PROJECT_DIR$/Client/ClientManager.h" />
@@ -238,7 +260,6 @@
         <option value="$PROJECT_DIR$/MSA/ServerManager.h" />
         <option value="$PROJECT_DIR$/MSA/Login.h" />
         <option value="$PROJECT_DIR$/MSA/TcpServerMessenger.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/MSA/cRoom.h" />
         <option value="$PROJECT_DIR$/Tests/main.cpp" />
         <option value="$PROJECT_DIR$/Tests/UDPSocketTest.cpp" />
@@ -259,6 +280,8 @@
         <option value="$PROJECT_DIR$/MSA/TcpServerMessenger.h" />
         <option value="$PROJECT_DIR$/MSA/LoginDispatcher.cpp" />
         <option value="$PROJECT_DIR$/MSA/LoginDispatcher.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Server/TcpServerMessenger.h" />
       </list>
     </option>
   </component>
@@ -270,10 +293,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="49" />
-    <option name="y" value="23" />
-    <option name="width" value="1871" />
-    <option name="height" value="984" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -297,39 +318,11 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="-CPlusPlus-NetworkProgramingLab" />
+              <option name="myItemId" value="CPP-ChatsRooms" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="-CPlusPlus-NetworkProgramingLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="-CPlusPlus-NetworkProgramingLab" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="-CPlusPlus-NetworkProgramingLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SocketUtils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="-CPlusPlus-NetworkProgramingLab" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="-CPlusPlus-NetworkProgramingLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MSA" />
+              <option name="myItemId" value="CPP-ChatsRooms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -344,13 +337,14 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MCA">
+  <component name="RunManager" selected="Application.Client">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="The_project2___Copy" TARGET_NAME="MCA" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -518,22 +512,17 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="MCA" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetworkProgramingLab" TARGET_NAME="MCA" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetworkProgramingLab" RUN_TARGET_NAME="MCA">
+    <configuration default="false" name="Client" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetworkProgramingLab" TARGET_NAME="Client" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetworkProgramingLab" RUN_TARGET_NAME="Client">
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="MSA" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetworkProgramingLab" TARGET_NAME="MSA" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetworkProgramingLab" RUN_TARGET_NAME="MSA">
+    <configuration default="false" name="Server" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetworkProgramingLab" TARGET_NAME="Server" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetworkProgramingLab" RUN_TARGET_NAME="Server">
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="TEST" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$/Tests" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetworkProgramingLab" TARGET_NAME="TEST" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetworkProgramingLab" RUN_TARGET_NAME="TEST">
-      <envs />
-      <method />
-    </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Application.MCA" />
-      <item index="1" class="java.lang.String" itemvalue="Application.MSA" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TEST" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Client" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Server" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -561,6 +550,7 @@
       <workItem from="1472389514073" duration="1926000" />
       <workItem from="1472403246368" duration="1200000" />
       <workItem from="1480322335313" duration="6152000" />
+      <workItem from="1480437837670" duration="463000" />
     </task>
     <task id="LOCAL-00001" summary="update notes">
       <created>1480323923024</created>
@@ -580,7 +570,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30705000" />
+    <option name="totallyTimeSpent" value="31168000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -592,17 +582,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="23" width="1871" height="984" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24216217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23591363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18780252" sideWeight="0.49583334" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30605382" sideWeight="0.7178378" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26931107" sideWeight="0.4958904" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30605382" sideWeight="0.28216216" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54384136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3059406" sideWeight="0.7151132" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26930693" sideWeight="0.4918378" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3059406" sideWeight="0.28488678" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5435644" sideWeight="0.49605057" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2881188" sideWeight="0.45813587" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2881188" sideWeight="0.4539231" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -659,17 +649,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/MSA/TcpServerMessenger.cpp</url>
+          <url>file://$PROJECT_DIR$/Server/TcpServerMessenger.cpp</url>
           <line>412</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/MSA/LoginDispatcher.cpp</url>
+          <url>file://$PROJECT_DIR$/Server/LoginDispatcher.cpp</url>
           <line>38</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/MSA/LoginDispatcher.cpp</url>
+          <url>file://$PROJECT_DIR$/Server/LoginDispatcher.cpp</url>
           <line>105</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
@@ -687,21 +677,21 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MSA/User.cpp">
+    <entry file="file://$PROJECT_DIR$/Server/User.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCA/UdpClientMessenger.cpp">
+    <entry file="file://$PROJECT_DIR$/Client/UdpClientMessenger.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCA/UdpClientMessenger.h">
+    <entry file="file://$PROJECT_DIR$/Client/UdpClientMessenger.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
@@ -716,7 +706,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MSA/TcpServerMessenger.cpp">
+    <entry file="file://$PROJECT_DIR$/Server/TcpServerMessenger.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6855">
           <caret line="457" column="0" lean-forward="false" selection-start-line="457" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
@@ -732,21 +722,21 @@
             <element signature="e#5391#5786#0" expanded="false" />
             <element signature="e#5787#6079#0" expanded="false" />
             <element signature="e#6080#6173#0" expanded="false" />
-            <element signature="e#6174#6544#0" expanded="false" />
-            <element signature="e#6545#7183#0" expanded="false" />
-            <element signature="e#7184#8021#0" expanded="false" />
-            <element signature="e#8022#8851#0" expanded="false" />
-            <element signature="e#8852#9727#0" expanded="false" />
-            <element signature="e#9728#10048#0" expanded="false" />
-            <element signature="e#10049#10675#0" expanded="false" />
-            <element signature="e#10676#10769#0" expanded="false" />
-            <element signature="e#10770#11284#0" expanded="false" />
-            <element signature="e#11285#11366#0" expanded="false" />
+            <element signature="e#6174#6547#0" expanded="false" />
+            <element signature="e#6548#7186#0" expanded="false" />
+            <element signature="e#7187#8024#0" expanded="false" />
+            <element signature="e#8025#8854#0" expanded="false" />
+            <element signature="e#8855#9730#0" expanded="false" />
+            <element signature="e#9731#10051#0" expanded="false" />
+            <element signature="e#10052#10678#0" expanded="false" />
+            <element signature="e#10679#10772#0" expanded="false" />
+            <element signature="e#10773#11287#0" expanded="false" />
+            <element signature="e#11288#11369#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/main.cpp" />
+    <entry file="file://$PROJECT_DIR$/Server/Main.cpp" />
     <entry file="file://$PROJECT_DIR$/Server/Server_Cli/main.h" />
     <entry file="file://$PROJECT_DIR$/Server/Server_Cli/main.cpp" />
     <entry file="file:///usr/include/c++/5/fstream" />
@@ -771,7 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,7 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -823,9 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#50#87#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -833,7 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="696" column="8" lean-forward="false" selection-start-line="696" selection-start-column="8" selection-end-line="696" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -841,7 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="913" column="8" lean-forward="false" selection-start-line="913" selection-start-column="8" selection-end-line="913" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -849,17 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="24" column="65" lean-forward="false" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
-          <folding>
-            <marker date="1480322880000" expanded="true" signature="185:711" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-585">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,23 +839,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCA/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Client/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
           <folding>
             <element signature="e#1#20#0" expanded="false" />
-            <marker date="1480323648000" expanded="false" signature="166:1037" ph="{...}" />
-            <marker date="1480323648000" expanded="true" signature="1049:3688" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MSA/userList.txt">
+    <entry file="file://$PROJECT_DIR$/Server/userList.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -891,7 +860,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCA/UdpClientMessenger.cpp">
+    <entry file="file://$PROJECT_DIR$/Client/UdpClientMessenger.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
@@ -912,7 +881,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCA/UdpClientMessenger.h">
+    <entry file="file://$PROJECT_DIR$/Client/UdpClientMessenger.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
@@ -920,7 +889,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCA/TcpCLientMessenger.h">
+    <entry file="file://$PROJECT_DIR$/Client/TcpCLientMessenger.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-150">
           <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="18" />
@@ -928,7 +897,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MSA/User.h">
+    <entry file="file://$PROJECT_DIR$/Server/User.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
@@ -936,7 +905,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MSA/User.cpp">
+    <entry file="file://$PROJECT_DIR$/Server/User.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="543">
           <caret line="43" column="48" lean-forward="false" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
@@ -944,18 +913,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MSA/Main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#82#478#0" expanded="false" />
-            <element signature="e#480#1428#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MSA/cRoom.h">
+    <entry file="file://$PROJECT_DIR$/Server/cRoom.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -963,7 +921,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MSA/cRoom.cpp">
+    <entry file="file://$PROJECT_DIR$/Server/cRoom.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="29" />
@@ -981,13 +939,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SocketUtils/MultipleTCPSocketListener.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="135">
           <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MSA/TcpServerMessenger.cpp">
+    <entry file="file://$PROJECT_DIR$/Server/TcpServerMessenger.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="28" />
@@ -1003,16 +961,16 @@
             <element signature="e#5391#5786#0" expanded="false" />
             <element signature="e#5787#6079#0" expanded="false" />
             <element signature="e#6080#6173#0" expanded="false" />
-            <element signature="e#6174#6544#0" expanded="false" />
-            <element signature="e#6545#7183#0" expanded="false" />
-            <element signature="e#7184#8021#0" expanded="false" />
-            <element signature="e#8022#8851#0" expanded="false" />
-            <element signature="e#8852#9727#0" expanded="false" />
-            <element signature="e#9728#10048#0" expanded="false" />
-            <element signature="e#10049#10675#0" expanded="false" />
-            <element signature="e#10676#10769#0" expanded="false" />
-            <element signature="e#10770#11284#0" expanded="false" />
-            <element signature="e#11285#11366#0" expanded="false" />
+            <element signature="e#6174#6547#0" expanded="false" />
+            <element signature="e#6548#7186#0" expanded="false" />
+            <element signature="e#7187#8024#0" expanded="false" />
+            <element signature="e#8025#8854#0" expanded="false" />
+            <element signature="e#8855#9730#0" expanded="false" />
+            <element signature="e#9731#10051#0" expanded="false" />
+            <element signature="e#10052#10678#0" expanded="false" />
+            <element signature="e#10679#10772#0" expanded="false" />
+            <element signature="e#10773#11287#0" expanded="false" />
+            <element signature="e#11288#11369#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1025,19 +983,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MSA/TcpServerMessenger.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="16" selection-end-column="128" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/Availability.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="138" column="8" lean-forward="false" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,7 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="371" column="49" lean-forward="false" selection-start-line="371" selection-start-column="37" selection-end-line="371" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,11 +1001,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MSA/LoginDispatcher.cpp">
+    <entry file="file://$PROJECT_DIR$/Server/LoginDispatcher.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
@@ -1073,20 +1020,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MSA/LoginDispatcher.h">
+    <entry file="file://$PROJECT_DIR$/Server/LoginDispatcher.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="150">
           <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding>
-            <element signature="e#35#49#0" expanded="true" />
+            <element signature="e#35#49#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCA/TcpCLientMessenger.cpp">
+    <entry file="file://$PROJECT_DIR$/Client/TcpCLientMessenger.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        <state relative-caret-position="120">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding>
             <element signature="e#102#221#0" expanded="false" />
             <element signature="e#2297#2449#0" expanded="false" />
@@ -1116,6 +1063,30 @@
             <element signature="e#9971#10033#0" expanded="false" />
             <element signature="e#10034#10075#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/TcpServerMessenger.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -34,10 +34,8 @@ public:
 	void exitServer(User* clientName);
 	void readFromFile(User *clientName);
 	void readfromChatRoom(User *clientName);
-	void readfromUsers(User *clientName);
 	void printToSreen(string msgToScreen);
 	int  numOfUsersFromFile();
-	int  numOfUserFromList();
 	int  getListConnectedUsers();
 	int  getListConnectedUsers(User *client);
 	void getListSessions();
@@ -53,13 +51,6 @@ public:
 
 	virtual ~TcpServerMessenger();
 
-    bool createSession(string userToChatWith);
-    bool createCR(string chatRoomName);
-    bool closeCR(string chatRoomName);
-    bool loginToChatRoom(string chatRoomName);
-    bool chatRoomExists(string chatRoomName);
-    map<string,User*>::iterator getBeginIter();
-    map<string,User*>::iterator getEndIter();
 
 };
 }
