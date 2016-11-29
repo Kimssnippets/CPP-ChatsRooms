@@ -19,24 +19,19 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d517650-8564-4e14-9ed0-02618f938ce3" name="Default" comment="update notes">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCA/TcpCLientMessenger.cpp" afterPath="$PROJECT_DIR$/Client/TcpCLientMessenger.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCA/TcpCLientMessenger.h" afterPath="$PROJECT_DIR$/Client/TcpCLientMessenger.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCA/UdpClientMessenger.cpp" afterPath="$PROJECT_DIR$/Client/UdpClientMessenger.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCA/UdpClientMessenger.h" afterPath="$PROJECT_DIR$/Client/UdpClientMessenger.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCA/main.cpp" afterPath="$PROJECT_DIR$/Client/main.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/LoginDispatcher.cpp" afterPath="$PROJECT_DIR$/Server/LoginDispatcher.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/LoginDispatcher.h" afterPath="$PROJECT_DIR$/Server/LoginDispatcher.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/Main.cpp" afterPath="$PROJECT_DIR$/Server/Main.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/TcpServerMessenger.cpp" afterPath="$PROJECT_DIR$/Server/TcpServerMessenger.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/TcpServerMessenger.h" afterPath="$PROJECT_DIR$/Server/TcpServerMessenger.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/User.cpp" afterPath="$PROJECT_DIR$/Server/User.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/User.h" afterPath="$PROJECT_DIR$/Server/User.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/cRoom.cpp" afterPath="$PROJECT_DIR$/Server/cRoom.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/cRoom.h" afterPath="$PROJECT_DIR$/Server/cRoom.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MSA/userList.txt" afterPath="$PROJECT_DIR$/Server/userList.txt" />
+    <list default="true" id="3d517650-8564-4e14-9ed0-02618f938ce3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/Client" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/MCA" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/MSA" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/Server" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/NetworkProgramingLab.cbp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/MCA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/MSA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/TEST" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
     </list>
     <ignored path="The project2 - Copy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -226,6 +221,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Kobi Or" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -344,7 +344,7 @@
       <recent name="$PROJECT_DIR$/Tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.Server">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="The_project2___Copy" TARGET_NAME="MCA" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -550,7 +550,7 @@
       <workItem from="1472389514073" duration="1926000" />
       <workItem from="1472403246368" duration="1200000" />
       <workItem from="1480322335313" duration="6152000" />
-      <workItem from="1480437837670" duration="463000" />
+      <workItem from="1480437837670" duration="747000" />
     </task>
     <task id="LOCAL-00001" summary="update notes">
       <created>1480323923024</created>
@@ -566,11 +566,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480324111110</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update notes">
+      <created>1480438495825</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1480438495825</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31168000" />
+    <option name="totallyTimeSpent" value="31452000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -585,9 +592,9 @@
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23591363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23591363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18780252" sideWeight="0.49583334" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3059406" sideWeight="0.7151132" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3059406" sideWeight="0.7151132" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26930693" sideWeight="0.4918378" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3059406" sideWeight="0.28488678" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5435644" sideWeight="0.49605057" order="1" side_tool="false" content_ui="tabs" />
@@ -643,7 +650,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update notes" />
-    <option name="LAST_COMMIT_MESSAGE" value="update notes" />
+    <MESSAGE value="Update Project Library" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Project Library" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -802,7 +810,7 @@
         <state relative-caret-position="1530">
           <caret line="102" column="87" lean-forward="false" selection-start-line="102" selection-start-column="87" selection-end-line="102" selection-end-column="87" />
           <folding>
-            <element signature="e#3#29#0" expanded="true" />
+            <element signature="e#3#29#0" expanded="false" />
           </folding>
         </state>
       </provider>
